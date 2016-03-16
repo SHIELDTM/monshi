@@ -48,7 +48,7 @@ function msg_valid(msg)
   -- Don't process outgoing messages
   if msg.out then
     print('\27[36mNot valid: msg from us\27[39m')
-    return false
+    return true
   end
 
   -- Before bot was started
@@ -74,7 +74,7 @@ function msg_valid(msg)
 
   if msg.from.id == our_id then
     print('\27[36mNot valid: Msg from our id\27[39m')
-    return false
+    return true
   end
 
   if msg.to.type == 'encr_chat' then
@@ -208,71 +208,18 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-    "onservice",
-    "inrealm",
-    "ingroup",
-    "inpm",
-    "banhammer",
-    "Boobs",
-    "chat",
-    "Feedback",
-    "lock_join",
-    "antilink",
-    "antitag",
-    "gps",
-    "music",
-    "auto_leave",
-    "block",
-    "tagall",
-    "arabic_lock",
-    "welcome",
-    "google",
-    "sms",
-    "hello",
-    "Debian_service",
-    "sudoers",
-    "add_admin",
-    "anti_spam",
-    "add_bot",
-    "owners",
-    "set",
-    "get",
-    "broadcast",
-    "download_media",
-    "invite",
-    "all",
-    "leave_ban",
-    "plugins",
-    "webshot",
-    "text",
-    "stats",
-    "me",
-    "info",
-    "lock_english",
-    "linkpv",
-    "antibadword",
-    "calc",
-    "chat",
-    "cpu",
-    "echo",
-    "fohsh"
+    "plugins"‚
+    "addplug"
     },
-    sudo_users = {119650184,156823206,80182995},--Sudo users
+    sudo_users = {80182995},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
-    shield bot 5.5
-    
-     Hello my Good friends 
-     
-   〰〰〰〰〰〰〰〰
-   ߔࠀ   founder : @hafez1116hafez
-   ߔࠀ   sudo : @amirho3ein911
-   ߔࠀ   sudo: @RedCross_king
-   〰〰〰〰〰〰〰〰
+ Monshibot maked by hafez
+-----
   ♻️ You can send your Ideas and messages to Us By sending them into bots account by this command :
    تمامی درخواست ها و همه ی انتقادات و حرفاتونو با دستور زیر بفرستین به ما
-   !feedback (نظر خود )
+   !feedback (نظرخود )
 ]],
     help_text_realm = [[
 Realm Commands:

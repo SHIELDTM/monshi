@@ -209,7 +209,16 @@ function create_config( )
   config = {
     enabled_plugins = {
     "plugins"‚
-    "addplug"
+    "addplug"‚
+    "get"‚
+    "set"‚
+    "broadcast"‚
+    "cfg"‚
+    "cfs"‚
+    "calc"‚
+    "expire"‚
+    "filter"‚
+    "download_media"
     },
     sudo_users = {80182995},--Sudo users
     disabled_channels = {},

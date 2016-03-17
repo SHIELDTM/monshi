@@ -208,17 +208,39 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-    "plugins"‚
-    "addplug"‚
-    "get"‚
-    "set"‚
-    "broadcast"‚
-    "cfg"‚
-    "cfs"‚
-    "calc"‚
-    "expire"‚
-    "filter"‚
-    "download_media"
+    "onservice",
+    "inrealm",
+    "ingroup",
+    "inpm",
+    "banhammer",
+    "Boobs",
+    "chat",
+    "Feedback",
+    "lock_join",
+    "antilink",
+    "antitag",
+    "gps",
+    "music",
+    "block",
+    "tagall",
+    "arabic_lock"‚
+    "google",
+    "sms",
+    "hello",
+    "Debian_service",
+    "sudoers",
+    "add_admin",
+    "anti_spam",
+    "add_bot",
+    "owners",
+    "set",
+    "get",
+    "broadcast",
+    "download_media",
+    "invite",
+    "all",
+    "leave_ban",
+    "plugins",
     },
     sudo_users = {80182995},--Sudo users
     disabled_channels = {},
